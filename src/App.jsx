@@ -1,25 +1,17 @@
-import Header from "./Header"
+import Login , {Profile,Setting, UserKey} from './UserComponent'
 function App(){
   return (
     <div>  
-      <Header />
-      <h1>Hello</h1>
+      
+      <h1>Importing nad Exporting Components</h1>
       <h1>Code Step by Step</h1>
-      <Fruit/>
-      <Colors/>
+      <h1>{UserKey}</h1>
+      
+      <Login/>
+      <Profile/>
+      <Setting/>
     </div>
     
   )
 }
-
-function Fruit(){
- return (
- <h1>Apple</h1>
- )
-}
-function Colors(){
- return (
- <h1>Pink</h1>
- )
-}
-export default App
+export default App ;
