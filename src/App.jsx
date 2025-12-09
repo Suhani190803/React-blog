@@ -1,17 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import Header from "./Header"
+function App(){
   return (
-    <>
-     <h1>code step by step</h1>
-     <h1>Hello react 19</h1>
-    </>
+    <div>  
+      <Header />
+      <h1>Hello</h1>
+      <h1>Code Step by Step</h1>
+      <Fruit/>
+      <Colors/>
+    </div>
+    
   )
 }
 
+function Fruit(){
+ return (
+ <h1>Apple</h1>
+ )
+}
+function Colors(){
+ return (
+ <h1>Pink</h1>
+ )
+}
 export default App
