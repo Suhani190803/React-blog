@@ -1,10 +1,11 @@
-function User1({name,age ,email ,city}){
+function User1({user}){
     return(
         <div>
-            <h1>Name :{name}</h1>
-            <h2>Age:{age}</h2>
-            <h3>Email :{email}</h3>
-            <h3>City :{city}</h3>
+            <hr/>
+            <h1>Name :{user.name}</h1>
+            <h2>Age:{user.age}</h2>
+            <h3>Email :{user.email}</h3>
+            {/* <h3>City :{city}</h3> */}
         </div>
     )
 }
