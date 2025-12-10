@@ -1,20 +1,20 @@
-
+import Counter from "./Counter";
+import { useState } from "react";
 function App(){
-    function callFun(){
-      alert ("function called")
+    const [fruit,setFruit] =useState("Apple");
+    const handelFruit =()=>{
+      setFruit("Banana")
     }
-    const  fruit=(name)=>{
-      alert(name)
-    }
-    return(
+     return(
       <div>
-        <h1>Event and function call </h1>
-        <button onClick={()=>fruit("Apple")}>Apple</button>
-          {/* not function call only definition   */}
-          <button onClick={()=>fruit("Banana")}>Banana</button>
+        <h1>
+          State in React Js
+        </h1>
+        <h2>{fruit}</h2>
+        <button onClick={handelFruit}>Change Fruit Name</button>
+        <Counter/>
       </div>
-    )
-     
+     )
   }
   
 export default App ;
