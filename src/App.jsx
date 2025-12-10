@@ -1,18 +1,20 @@
-import Counter from "./Counter";
 import { useState } from "react";
+import User from "./User";
 function App(){
-    const [fruit,setFruit] =useState("Apple");
-    const handelFruit =()=>{
-      setFruit("Banana")
-    }
+    const [display,setDisplay] = useState(true)
      return(
       <div>
         <h1>
-          State in React Js
+          Toggle in React Js
         </h1>
-        <h2>{fruit}</h2>
-        <button onClick={handelFruit}>Change Fruit Name</button>
-        <Counter/>
+        <button onClick={()=>setDisplay(!display)}>Toggle</button>
+        {/* {
+          display?<h1>Anil Kapoor</h1>:null
+        }
+          */}
+          {
+          display?<User/>:null
+}
       </div>
      )
   }
