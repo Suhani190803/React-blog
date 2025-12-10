@@ -1,22 +1,15 @@
-import { useState } from "react"
+import User1 from "./User1";
+
 function App(){
-    const [count , setCount] =useState (0);
+  
     return(
       <div>
-        <h1>{count}</h1>
-        <button onClick={()=>setCount(count+1)}>Counter</button>
-         {
-         count ==0?<h1>Condition 0</h1>
-         :count==1?<h1>Condition 1</h1>
-         :count==2?<h1>Condition 2</h1>
-         :count==3?<h1>Condition 3</h1>
-         :count==4?<h1>Condition 4</h1>
-         :count==5?<h1>Condition 5</h1>
-         :count==6?<h1>Condition 6</h1>
-         :<h1>other condtion</h1>
-         }
+        <h1>Props in React Js</h1>
+      
+        <User1 name="Shahrukh Khan" age ={60} email = "Khan123@google.com" city = "Bihar" />
       </div>
     )
+
   }
   
 export default App ;
