@@ -1,33 +1,21 @@
+import { useState } from "react";
 
-import User from "./User";
-import Wrapper from "./Wrapper";
+
 
 function App(){
+  const [value ,setValue] = useState("Shiv bhole")
      return(
       <div>
         <h1>
-          Props in React-Js
+          Get Input  field Value
         </h1>
-        <Wrapper color ="yellow">
-          <h1>hiii everyone</h1>
-        </Wrapper>
-        <Wrapper color= "orange">
-          <h1>Hello Guys</h1>
-        </Wrapper>
-        <Wrapper>
-          <h1>Nice to meet u guys</h1>
-          <h2 style = {{color :"green"}}>How are u all...!</h2>
-        </Wrapper>
-        
-        {/* <User name = "Anil Kapoor"/>
-        <User name = "Samiksha" />
-        <User name ="Sheru" />
-        <User />
-        <User />
-        <User /> */}
-      </div>
+        <input type="text" value={value} onChange={(event)=>setValue(event.target.value)} placeholder="Enter User Name"/>
+        <h1>{value}</h1>
+        <button onClick = {()=>setValue("")}>
+          Clear Value
+        </button>
+        </div>
      )
-    
   }
   
 export default App ;
