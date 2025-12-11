@@ -1,7 +1,7 @@
-function User (){
+function User ({name ="New User"}){
     return(
         <div>
-            <h1>Salman Khan</h1>
+            <h1>hiii..!!! {name}</h1>
         </div>
     )
 }
