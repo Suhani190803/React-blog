@@ -1,29 +1,16 @@
-import { useState } from "react";
+import FavFood from "./FavFood";
+
 
 function App(){
-    const [name,setName] = useState('');
-    const [password,setPassword] = useState('');
-    const [email,setEmail] = useState('');
-     return(
+    return(
       <div>
-        <h1>Controller Component</h1>
-        <form action="" method="get">
-          <input type="text" value={name} onChange={(event)=>setName(event.target.value)} placeholder="Enter Name" />
-          <br/><br/>
-          <input type="password" value={password} onChange={(event)=>setPassword(event.target.value)} placeholder="Enter Password" />
-          <br/><br/>
-          <input type="email" value={email} onChange={(event)=>setEmail(event.target.value)} placeholder="Enter Email" />
-          <br/><br/>
-          <button>Submit</button>
-           <button onClick ={()=>{setEmail('');setPassword('');setName('')}}>Clear</button>
-
-
-          <h3>{name}</h3>
-          <h3>{password}</h3>
-          <h3>{email}</h3>
-        </form>
+        <h1>Handel Checkbox in React-js</h1>
+      
+        <FavFood/>
       </div>
-     )
+      
+    )
+     
   }
   
 export default App ;
