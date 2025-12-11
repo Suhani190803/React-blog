@@ -1,5 +1,6 @@
 
 import User from "./User";
+import Wrapper from "./Wrapper";
 
 function App(){
      return(
@@ -7,12 +8,23 @@ function App(){
         <h1>
           Props in React-Js
         </h1>
-        <User name = "Anil Kapoor"/>
+        <Wrapper color ="yellow">
+          <h1>hiii everyone</h1>
+        </Wrapper>
+        <Wrapper color= "orange">
+          <h1>Hello Guys</h1>
+        </Wrapper>
+        <Wrapper>
+          <h1>Nice to meet u guys</h1>
+          <h2 style = {{color :"green"}}>How are u all...!</h2>
+        </Wrapper>
+        
+        {/* <User name = "Anil Kapoor"/>
         <User name = "Samiksha" />
         <User name ="Sheru" />
         <User />
         <User />
-        <User />
+        <User /> */}
       </div>
      )
     
